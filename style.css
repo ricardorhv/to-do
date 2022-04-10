@@ -35,7 +35,7 @@ input {
 }
 
 main {
-  width: 450px;
+  width: 550px;
   height: 90vh;
   background-color: var(--background);
   margin: 1rem 0.5rem;
@@ -111,7 +111,7 @@ main section:nth-of-type(2) {
   overflow:scroll;
 }
 
-main section:nth-of-type(2) .card-task button{
+main section:nth-of-type(2) .card-task button.btn-del{
   background: transparent;
   border: none;
   font-size: 1.7rem;
@@ -121,6 +121,21 @@ main section:nth-of-type(2) .card-task button{
   align-items: center;
   top: 0;
   right: .8rem;
+  color: var(--red);
+  cursor: pointer;
+  transition: all .4s;
+  outline: #000;
+}
+main section:nth-of-type(2) .card-task button.btn-edit{
+  background: transparent;
+  border: none;
+  font-size: 1.7rem;
+  position: absolute;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  top: 0;
+  right: 3rem;
   color: var(--red);
   cursor: pointer;
   transition: all .4s;
@@ -144,7 +159,7 @@ main section:nth-of-type(2) .card-task button:hover {
 }
 
 .modal .container {
-  width: 26rem;
+  width: 30rem;
   background-color: #fff;
   border-radius: 20px;
   height: 9rem;
